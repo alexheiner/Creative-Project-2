@@ -100,7 +100,7 @@ const getIngredients = results =>{
     for(var key in results.meals[0]){
         let val = results.meals[0][key];
         if(key.includes(ingredientLocation)){
-            if(val !== ""){
+            if(val !== "" && val !== null){
                 arr.push(val);
             }
         }
@@ -114,7 +114,7 @@ const getMeasurements = results =>{
     for(var key in results.meals[0]){
         let val = results.meals[0][key];
         if(key.includes(measureLocation)){
-            if(val !== ""){
+            if(val !== "" && val !== null){
                 arr.push(val);
             }
         }
