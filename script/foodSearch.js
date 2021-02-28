@@ -125,8 +125,7 @@ const getMeasurements = results =>{
 const displayError = () =>{
     searchResultsDiv.scrollIntoView();
     searchResultsDiv.style.display = "block";
-    searchResultsDiv.innerHTML = "No results found. Please try searching again";
-
+    searchResultsDiv.innerHTML = "No results found. Please refresh page and try searching again";
 }
 
 // POPULAR RECIPES
